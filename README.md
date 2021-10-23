@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/rene-roscher/observable-provider.svg?style=flat-square)](https://packagist.org/packages/rene-roscher/observable-provider)
 
 ---
-With this package, you should be able to register your observers more easily. Quite simply through the key-> value principle.
+With this package, you should be able to register your observers more easily. Quite simply through the key -> value principle.
 
 ## Installation
 
