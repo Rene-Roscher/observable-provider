@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "rene-roscher/observable-provider",
+    "description": "Simplified way to register the observers in Laravel for a model",
     "keywords": [
-        ":vendor_name",
+        "Rene-Roscher",
         "laravel",
-        ":package_slug"
+        "observable-provider"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/rene-roscher/observable-provider",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Rene Roscher",
+            "email": "roscher794@gmail.com",
             "role": "Developer"
         }
     ],
@@ -22,26 +22,12 @@
     },
     "require-dev": {
         "nunomaduro/collision": "^5.3",
-        "orchestra/testbench": "^6.15",
-        "pestphp/pest": "^1.18",
-        "pestphp/pest-plugin-laravel": "^1.1",
-        "spatie/laravel-ray": "^1.23",
-        "vimeo/psalm": "^4.8"
+        "orchestra/testbench": "^6.15"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Xepare\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "./vendor/bin/pest --no-coverage",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {
         "sort-packages": true
@@ -49,11 +35,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
-            }
+                "Xepare\\ObservableProvider\\ObservableServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
